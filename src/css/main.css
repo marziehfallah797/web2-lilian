@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@font-face {
+  font-family: Sans;
+  src: url(../fonts/Iranian\ Sans.ttf);
+}
+@font-face {
+  font-family: Nazanin;
+  src: url(../fonts/Far_Nazanin.ttf);
+}
+@theme {
+  --font-sans: Sans;
+  --font-nazanin: Nazanin;
+}
+*{
+  user-select: none;
+}
+.text-height-center {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #8f8f8f;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.slide {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.man{
+    direction: ltr;
+}
+.shipping-radio {
+    display: none;
+}
+
+.radio-circle {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #E0E0E0;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.radio-dot {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E0E0E0;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+}
+.shipping-radio:checked + .radio-circle .radio-dot {
+    background-color: #3D3D3D;
+}

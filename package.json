@@ -1,0 +1,21 @@
+{
+  "name": "web2-project",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind": "npx @tailwindcss/cli -i ./src/css/main.css -o ./src/css/output.css --watch"
+  },
+  "devDependencies": {
+    "daisyui": "^5.7.47",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "swiper": "^14.3.0",
+    "tailwindcss": "^4.3.3"
+  }
+}
